@@ -1,7 +1,11 @@
 import express from 'express';
+import routes from './routes/crmRoutes';
 
 const app = express();
 const PORT = 4000;
+
+//funcion de rutas
+routes(app);
 
 //api basica que despues llamamos localhost:4000/
 app.get('/', (req, res) =>
