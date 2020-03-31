@@ -20,6 +20,9 @@ app.use(bodyParser.json());
 //funcion de rutas
 routes(app);
 
+// permitir archivos staticos por el servidor
+app.use(express.static('public'));
+
 //api basica que despues llamamos localhost:4000/
 app.get('/', (req, res) =>
     res.send(`Node y express corriendo en el puerto ${PORT}`)
