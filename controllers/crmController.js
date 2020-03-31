@@ -27,3 +27,13 @@ export const getContact = (req, res) => {
         res.json(contact);
     })
 }
+
+// accion vinculada GET con Id
+export const getContactWithId = (req, res) => {
+    Contact.findById(req.params.Contact.contactID, (err, contact) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json(contact);
+    })
+}
