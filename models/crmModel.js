@@ -7,22 +7,21 @@ export const ContactSchema = new Schema({
         type: String,
         required: 'Enter a first name'
     },
-    lastName:{
+    lastName: {
         type: String,
         required: 'Enter a last name'
     },
-    email:{
-        type: String        
+    email: {
+        type: String
     },
-    company:{
-        type: String        
+    company: {
+        type: String
     },
-    phone:{
-        type: Number        
+    phone: {
+        type: Number
     },
-    create_date:{
+    create_date: {
         type: Date,
-        default: Date.now 
-    }     
+        default: Date.now
+    }
 });
-
